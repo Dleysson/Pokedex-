@@ -1,0 +1,17 @@
+<header class="w-full bg-primary header flex items-center">
+    <div class="w-11/12 mx-auto">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="../../assets/header/pokemon_logo.svg" alt="">
+            </div>
+            <div class="relative z-10">
+                <img (click)="pokeballClick($event)" class="pokeball z-10 origin-bottom pokeballAnimation"
+                    src="../../assets/header/pokeball.svg" alt="">
+                <div class="bg-white absolute flex flex-col items-center justify-center pokeball-menu">
+                    <i class="fa-brands fa-linkedin-in text-primary text-3xl mb-4 mt-7"></i>
+                    <i class="fa-brands fa-github text-primary text-3xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

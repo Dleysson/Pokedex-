@@ -1,0 +1,31 @@
+.header{
+    height: 6.25rem;
+}
+
+.pokeball{
+    margin-inline-end: auto;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+
+.pokeball-menu{
+    z-index: -1;
+    top: 0.188rem;
+    border-radius: 3.125rem;
+    width: 90%;
+    right: 0.188rem;
+    height: 44px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+
+
+@keyframes PokeballMovement {
+    25%{transform: rotate(10deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-10deg);}
+    100%{transform: rotate(0deg);}
+}

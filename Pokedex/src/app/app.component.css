@@ -1,0 +1,4 @@
+.main-bg{
+    background-image: url('../assets/main-bg.svg');
+    min-height: calc(100vh - 12.5rem);
+}
