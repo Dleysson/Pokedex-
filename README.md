@@ -1,2 +1,2 @@
 # Pokedex 
- Pokedex with angular
+ Pokedex with angular and tailwind
