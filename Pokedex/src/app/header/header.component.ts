@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
     if (!this.menuIsOpen) {
       (<HTMLImageElement>event.target).style.animation = 'PokeballMovement 0.8s ease-in-out'
       setTimeout(() => {
-        this.menu = document.querySelector('.pokeball-menu') as HTMLDivElement;
+        this.menu = <HTMLDivElement>document.querySelector('.pokeball-menu');
         this.menu.style.visibility = 'unset';
         this.menu.style.height = '9.75rem';
         this.menuIsOpen = true
