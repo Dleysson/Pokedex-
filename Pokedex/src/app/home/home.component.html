@@ -1,9 +1,15 @@
 <div class="py-5">
     <ul class="pokemons flex flex-wrap justify-center xs:justify-between">
-        <li class="pokemon mb-3" *ngFor="let pokemonInfo of pokemonInfos">
+        <li (mouseenter)="showPokemonInfo($event)" (mouseleave)="hidePokemonInfo($event)" class="pokemon mb-3 relative"
+            *ngFor="let pokemonInfo of pokemonInfos">
             <div class="pokemon__image bg-white rounded-full flex items-center justify-center">
-                <!-- {{pokemonInfo.name}} -->
                 <img src="{{pokemonInfo.sprites.other.dream_world.front_default}}" style="width: 100px; height: 100px;">
+            </div>
+            <div class="pokemon__info bg-white rounded-full absolute flex flex-col justify-center items-center">
+                <p class="text-primary font-bold capitalize">{{pokemonInfo.name}} ({{pokemonInfo.id}})</p>
+                <div *ngFor="let type of pokemonInfo.types">
+                    <div>{{type.type.name}}</div>
+                </div>
             </div>
         </li>
     </ul>

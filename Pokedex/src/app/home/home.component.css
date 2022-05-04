@@ -1,4 +1,13 @@
 .pokemon__image{
     width: 9.375rem;
     height: 9.375rem;
+    transition: 0.5s;
+}
+
+.pokemon__info{
+    width: 9.375rem;
+    height: 9.375rem;
+    top: 0;
+    transition: 0.5s;
+    transform: rotateY(270deg);
 }
