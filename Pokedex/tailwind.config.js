@@ -1,6 +1,4 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./src/app/**/*.{ts,html}"],
   darkMode: false,
   content: [
     "./src/**/*.{html,ts}",
@@ -12,10 +10,9 @@ module.exports = {
         'secundary': '#C9C9C9',
         'p-yellow': '#FFCB05',
         'p-blue': '#3367B0',
-
       }
     },
-    screens:{
+    screens: {
       'xs': '400px'
     }
   },

@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/* Pokemon bg color */
+@import url('./assets/css/_pokemon-colors.css');
 
+/* tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
